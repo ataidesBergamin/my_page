@@ -4,45 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Ataídes Natã Bergamin</h1>
-      <h5>abergamin_developer</h5>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre mim</a></li>
-          <li><a href="#projeto">Projetos</a></li>
+    <header class="hero">
+      <nav class="navbar">
+        <h3 class="logo">Dev_Portfólio</h3>
+        <h5 class="logo">abergamin_developer</h5>
+        <button id="hamburguer">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ata%C3%ADdesnat%C3%A3bergamin674bb0321/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Linkedin
-            </a>
-          </li>
         </ul>
       </nav>
+      <div class="hero-conteiner">
+        <p class="intro">Olá, eu sou Ataídes Natã Bergamin</p>
+        <h2>Desenvolvedor Front-End!</h2>
+        <p class="intro">Estou criando expêriencias digitais com código.</p>
+      </div>
     </header>
     <section id="sobre">
-      <h2>Sobre mim</h2>
-      <article>
-        <p>
-          Olá, meu nome é Ataídes, tenho 30 anos e estou iniciando minha
-          trajetória na carreira de desenvolvedor. Sou apaixonado por
-          programação e lógica, áreas que me motivam a buscar constante
-          aprendizado. Nos momentos de lazer, dedico-me aos board games, meu
-          hobby favorito, embora também tenha grande interesse por economia.
-          Talvez, em outra circunstância, minha escolha profissional tivesse me
-          levado a um escritório, de terno e gravata — traje no qual, admito com
-          um leve sorriso, que vesti muito bem.
-        </p>
-        <img
-          src="img056.jpeg"
+      <h2>Sobre Mim</h2>
+      <article class="sobre-conteudo">
+        <p class="sobre-texto">
+            Sou formado em **Análise e Desenvolvimento de Sistemas** e
+            atualmente estou em busca da minha primeira oportunidade
+            profissional na área de tecnologia, com foco em **Desenvolvimento
+            Web**. A programação sempre foi algo que despertou minha
+            curiosidade. Desde pequeno eu gostava de entender como as coisas
+            funcionavam — cheguei até a desmontar rádios e meu próprio videogame
+            apenas para descobrir o que havia dentro deles. Com o passar dos
+            anos, essa curiosidade evoluiu para o interesse pela tecnologia.
+            Durante o curso de **Tecnólogo em Eletrônica pelo SENAI**, tive meu
+            primeiro contato com **lógica de programação**, e foi nesse momento
+            que descobri minha verdadeira paixão pela área. A partir dali,
+            comecei a me aprofundar cada vez mais no universo da programação, o
+            que me levou a buscar minha formação em Análise e Desenvolvimento de
+            Sistemas. Atualmente continuo me especializando por meio de cursos e
+            projetos práticos, com o objetivo de ampliar minhas habilidades
+            técnicas e conquistar minha primeira oportunidade como
+            desenvolvedor. Acredito que meu perfil é **dinâmico, curioso e
+            comprometido com o aprendizado contínuo**, além de ter facilidade
+            para **trabalhar em equipe e colaborar em projetos que gerem valor
+            para a organização**.
+         </p>
+        
+        <div class="sobre-dados">
+          <img id="img"
+          src="201588946.jpg"
           alt="Imagem de foto de perfil."
           title="Imagem de Ataídes"
         />
+        <div class="dados">
+          <div>
+            <strong>3+</strong>
+            <span>Projetos concluídos</span>
+          </div>
+          <div>
+            <strong>1+</strong>
+            <span>Ano(s) de experiência</span>
+          </div>
+          <div>
+            <strong>3+</strong>
+            <span>Tecnologias</span>
+          </div>
+        </div>
+        </div>
       </article>
       <aside>
         <h3>Habilidades</h3>
