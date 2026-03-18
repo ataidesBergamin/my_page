@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   </head>
   <body>
     <header class="hero">
@@ -26,7 +27,7 @@
       </div>
     </header>
     <section id="sobre">
-      <h1>Sobre Mim</h1>
+      <h2>Sobre Mim</h2>
       <article class="sobre-conteudo">
         <p class="sobre-texto">
             Sou formado em **Análise e Desenvolvimento de Sistemas** e
@@ -73,17 +74,9 @@
         </div>
         </div>
       </article>
-      <!-- <aside>
-        <h3>Habilidades</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Java Scrip</li>
-        </ul>
-      </aside> -->
     </section>
     <section id="projetos">
-      <h1>Meus Projetos</h1>
+      <h2>Meus Projetos</h2>
       <div class="projetos-container">
         <div class="projeto-card">
           <img src="./20190322051919.jpg" alt="Imagem do projeto" />
@@ -105,33 +98,37 @@
         </div>
       </div>
         <p>
-          Estou iniciando meus projetos web. Este site é um deles! Fique atento,
-          pois em breve irei disponibilizar todos os projetos que estão em fase
+          Estou iniciando meus projetos web. Além dos disponivéis, este site é um deles! Fique atento,
+          pois em breve irei disponibilizar mais os projetos que estão em fase
           de desenvolvimento.
         </p>
     </section>
     <section id="habilidades">
-      <h2>Habilidades e Tecnologias</h2>
+      <h2>Habilidades e Tecnológias</h2>
+      <p>
+        Tecnológias e ferramentas que utilizo para desenvolver soluções
+        completas.
+      </p>
       <table>
         <thead>
-          <tr>
-            <th>Tecnologia</th>
-            <th>Nível</th>
-            <th>Descrição</th>
+          <tr class="topicos">
+            <th><strong>Tecnológia</strong></th>
+            <th><strong>Nível</strong></th>
+            <th><strong>Descrição</strong></th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="topicos">
             <td>HTML</td>
             <td>Intermediário</td>
             <td>Capaz de criar estruturas de páginas web semânticas e responsivas</td>
           </tr>
-          <tr>
+          <tr class="topicos">
             <td>CSS</td>
             <td>Intermediário</td>
             <td>Experiência com flexbox, grid e animações CSS</td>
           </tr>
-          <tr>
+          <tr class="topicos">
             <td>JavaScript</Script></td>
             <td>Básico</td>
             <td>Desenvolvimento de scripts do lado do cliente para interações</td>
@@ -139,38 +136,44 @@
         </tbody>
       </table>
     </section>
+    </section>
     <footer>
-      <p>Direitos reservados a Ataídes.</p>
+      <p> &copy; Direitos reservados a Ataídes.</p>
       <section id="contato">
         <h2>Contatos</h2>
         <p>Tem um projeto em mente? Entre em contato!</p>
-        <form action="">
-          <label for="name">Nome: </label>
-          <input type="text" id="name" name="name" required /><br />
-          <label for="email">E-mail: </label>
-          <input type="email" id="email" name="email" required /><br />
-          <label for="telefone">Telefone: </label>
-          <input type="tel" id="telefone" name="telefone" required /><br />
-          <label for="assunto">Assunto: </label>
-          <select name="assunto" id="assunto">
-            <option value="orcamento">Orçamento</option>
-            <option value="duvida">Dúvida</option>
-            <option value="outro">Outro</option>
-          </select>
-          <br />
-          <label for="mensagem">Menssagem: </label> <br />
-          <textarea
-            name="mensagem"
-            id="mensagem"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <br />
-          <input type="checkbox" name="incriscao" id="incriscao" />
-          <label for="incriscao"
-            >Deseja receber minhas Newsletter? Fique por dentro!</label
-          >
-          <input type="submit" value="Enviar mensagem" />
+        <form action="" id="formulario">
+          <div class="impunts">
+            <label for="name">Nome:     </label>
+            <input type="text" id="name" name="name" required class="entradas" placeholder="Digite seu nome completo" /><br />
+            <label for="email">E-mail:  </label>
+            <input type="email" id="email" name="email" required class="entradas" placeholder="Digite seu e-mail"/><br />
+            <label for="telefone">Telefone:  </label>
+            <input type="tel" id="telefone" name="telefone" required class="entradas" placeholder="Digite seu telefone"/><br />
+            <label for="assunto">Assunto:   </label>
+            <select name="assunto" id="assunto" class="entradas">
+              <option value="orcamento">Orçamento</option>
+              <option value="duvida">Dúvida</option>
+              <option value="outro">Outro</option>
+            </select>
+            <br />
+            <label for="incriscao"
+              >Deseja receber minhas Newsletter? Fique por dentro!</label
+            >
+            <input type="checkbox" name="incriscao" id="incriscao" />
+          </div>
+          <div class="impunts">
+            <label for="mensagem">Menssagem: </label>
+            <textarea 
+              name="mensagem"
+              id="mensagem"
+              cols="60"
+              rows="15"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <br />
+             <input class="boton" type="submit" value="Enviar mensagem" />
+          </div>
         </form>
         <address>
           E-mail:
@@ -182,5 +185,12 @@
         </address>
       </section>
     </footer>
+    <script>
+      let button = document.getElementById("hamburguer");
+      const menu = document.getElementById("menu");
+      button.addEventListener("click", function () {
+        menu.classList.toggle("ativa");
+      });
+    </script>
   </body>
 </html>
