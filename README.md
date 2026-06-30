@@ -1,8 +1,8 @@
-# Meu Portfolio
+# Meu Portifolio
 
 Este repositorio contem meu portfolio pessoal, onde apresento minhas informacoes, projetos e formas de contato.
 
-## Sobre o projeto
+## Sobre o projeto 
 
 O objetivo deste site e reunir em um unico lugar:
 
